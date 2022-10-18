@@ -1,0 +1,132 @@
+Question solved
+
+1. Two sum : To return indices of an array if the sum of elements add upto the target
+
+             solution : make two for loops one till last but one element other till last element 
+				check the target sum and then pushback the indices to a vector
+				return vector
+
+***************************************************************************************************************************
+
+2. Palindrome number : To check whateher integer number is palindrome or not
+			     
+			     solution : Convert int to string using to_stirng(num)
+					    reverse the stirng from begin to end
+					    then check if num is same as reversed
+
+			     solution : dig = num%10
+					    rev = rev*10 + dig
+					    num = num /10			
+					    then check the palindrome
+
+***************************************************************************************************************************
+
+3. Merge Two sorted lists : Given two lists merge them in sorting order
+				   
+				    soluton : Check whether either list is null - return other list then
+						  else if list value less - provide head and tail as listvalue and move the list
+						  until both list are not null - based  on smallest value - provide list to tail , move tail and list
+						  check if all list are empty - else do the above step
+						  return head
+
+***************************************************************************************************************************
+
+4. Remove Duplicates from Sorted Array : Given a sorted array to find the duplicates and remove the duplicates and return the only the number of elements left
+						     
+						     solution : Take a two pointer left and right , if left num not equal to right then move  and replace left element with right 
+								    return left 
+
+***************************************************************************************************************************
+
+5. Remove Element : Given the array where a value if repeated should be deleted and return the number of elements in the array
+			  
+			  solution : Take two pointers one form zero other from last element 
+					 while p is less than or equal to the last pointer 
+					 if the value is not same as any of the pointer the pointer move the pointer
+					 else swap the numbers and return the first pointer
+
+***************************************************************************************************************************
+
+6. Search Insert Position : Given a sorted array find a value and return the index in O(LOGN)
+				 
+					 solution : using binary search 
+							 mid = low + (high-low)/2;
+							 return the indices
+
+***************************************************************************************************************************
+
+7. Length of Last Word : Given a string find the length of the last word  
+
+				   solution : consider a for loop from last element and decrease the count
+						   if the last element is not a " " increment the count variable
+						   else if the element is " " and count > 0  
+						   return the count
+
+***************************************************************************************************************************
+
+8. Plus One : Given a array which is number of single elemebt ut into array find the next element in  array form
+
+		   solution : put a for loop from last element to first element 
+				   if element is 9 - change it into zero
+				   else increment the digit and return digit
+				   outside the for loop // becuase the element is all 999 then pushback a (0) 
+				   // and then change the first element to one and then return digit
+
+***************************************************************************************************************************
+
+9. Merge Sorted Array : Given two sorted arrays , merge them and and put into first array
+
+				  solution : if first aay is empty put the second array element into first
+						  else - for loop from size of both arrays - if "i" value is gretaer than size of first array
+						  insert the second array
+						  then sort the array in c++
+
+***************************************************************************************************************************
+
+10. Pascal's Triangle : Given a number to find the number of levels of pascals triangle , print the triangle
+
+				  solution : take a 2d vector of size of given  number
+						  take two for loops  - one from zero to no of elements -  second from zero to number of rows("i")
+						  if column index is zero or "i" -  then push_back value as one
+					        else pushback - addition of (i-1)(j-1) and (i-1)(j) 
+						   i.e value of same row two diff columns
+						   then return the vector
+
+***************************************************************************************************************************
+
+11. Pascal's Triangle II : Given the rowindex to print the pascals triangle form
+
+					solution : take two vectors to hold the changing triangle values
+							take two for loops -  one from zero to last rowindex and pushback(1)
+							other loop from 1 to last row("i") - add the row and columnn values and stor it in another array
+							then give the changed vector array to another array
+							repeat it in first loop and return the vector
+
+
+***************************************************************************************************************************
+
+12. 
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
